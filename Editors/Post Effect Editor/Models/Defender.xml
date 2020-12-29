@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<TMesh type="Engine.Mesh.TMesh" identifier="87607648">
+  <GeometryFile>Defender.FBX</GeometryFile>
+  <Cullmode>cmCCW</Cullmode>
+  <Alpha>1</Alpha>
+  <AlphaTestTreshold>0</AlphaTestTreshold>
+  <Specular>True</Specular>
+  <SpecularIntensity>1</SpecularIntensity>
+  <SpecularPower>119</SpecularPower>
+  <DiffuseTetxure>DefenderDiffuse.tga</DiffuseTetxure>
+  <NormalTexture></NormalTexture>
+  <SpecularTexture>DefenderMaterial.tga</SpecularTexture>
+  <GlowTexture>DefenderGlow.tga</GlowTexture>
+</TMesh>

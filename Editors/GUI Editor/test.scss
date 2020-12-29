@@ -1,0 +1,16 @@
+#root {
+	Fontcolor : $FFFFF00F;
+	Fontfamily : Impact;
+	Fontsize : 18;
+	Fontweight : 700;
+}
+
+.button{
+	Position : 50% 30;
+	Anchor : caTop;
+	Size : 100 auto;
+	Background : RedButton.png;
+	&:hover{
+		Background : RedButtonHover.png;
+	}
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<TPostEffectManager type="Engine.PostEffects.Editor.TPostEffectManager" identifier="18525488">
+  <FPostEffects type="System.Generics.Collections.TObjectDictionary&lt;System.string,Engine.PostEffects.TPostEffect&gt;" identifier="18676736">
+    <FOwnerships>[doOwnsValues]</FOwnerships>
+    <FItems type="array" size="4" rawData="false">
+      <element_0>
+        <HashCode>263113244</HashCode>
+        <Key>SSAO</Key>
+        <Value type="Engine.PostEffects.TPostEffectSSAO" identifier="188719904">
+          <RenderMask>True</RenderMask>
+          <SphericalKernel>True</SphericalKernel>
+          <Dotnoise>False</Dotnoise>
+          <AOKernelsize>8</AOKernelsize>
+          <Noisekernelsize>4</Noisekernelsize>
+          <AORange>1,20000004768372</AORange>
+          <Darkness>1,70000004768372</Darkness>
+          <FUID>SSAO</FUID>
+          <RenderOrder>0</RenderOrder>
+          <Enabled>False</Enabled>
+          <HBAORaysamples>4</HBAORaysamples>
+          <SSAOType>VBAO</SSAOType>
+          <AOResolutionDivider>0</AOResolutionDivider>
+          <Range>0,46000000834465</Range>
+          <NormalBias>0,620000004768372</NormalBias>
+          <Anamorphic>5</Anamorphic>
+          <Kernelsize>4</Kernelsize>
+          <ResolutionDivider>1</ResolutionDivider>
+          <AdditiveBlur>False</AdditiveBlur>
+          <SampleSpread>1</SampleSpread>
+          <Iterations>1</Iterations>
+          <Intensity>1</Intensity>
+        </Value>
+      </element_0>
+      <element_1>
+        <HashCode>-1</HashCode>
+        <Key></Key>
+        <Value/>
+      </element_1>
+      <element_2>
+        <HashCode>-1</HashCode>
+        <Key></Key>
+        <Value/>
+      </element_2>
+      <element_3>
+        <HashCode>-1</HashCode>
+        <Key></Key>
+        <Value/>
+      </element_3>
+    </FItems>
+    <FCount>1</FCount>
+    <FComparer/>
+    <FGrowThreshold>3</FGrowThreshold>
+    <FOnKeyNotify/>
+    <FOnValueNotify/>
+    <FKeyCollection/>
+    <FValueCollection type="System.Generics.Collections.TDictionary&lt;System.string,Engine.PostEffects.TPostEffect&gt;.TValueCollection" identifier="18493136">
+      <FDictionary type="System.Generics.Collections.TObjectDictionary&lt;System.string,Engine.PostEffects.TPostEffect&gt;" identifier="18676736"/>
+    </FValueCollection>
+  </FPostEffects>
+</TPostEffectManager>

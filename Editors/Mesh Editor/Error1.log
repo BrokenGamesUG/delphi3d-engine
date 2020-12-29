@@ -1,0 +1,3 @@
+﻿---------- Log from 17.12.2020 16:14:27 ---------------------------------------------------------------------------------------
+[17.12.2020 16:14:39] TTextur.CreateTextureFromFile: Texture G:\Git\Delphi3D-Engine\Editors\Mesh Editor\FurMask.tga does not exist!
+[17.12.2020 16:14:39] TRawMesh.SetFurTexture: Can't find texture "G:\Git\Delphi3D-Engine\Editors\Mesh Editor\FurMask.tga".
