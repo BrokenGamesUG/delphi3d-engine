@@ -44,7 +44,7 @@ To be honest this engine has lots of neat functionality, but is not easy to use.
 
 The DirectX SDK throws a lot of warnings which are printed by Delphi in the editor output. This printing consumes a lot of performance, e.g. the editors seems to run slowly when this happens. To work around this you can use the dxcpl.exe for the DirectX SDK to mute the warning showing up.
 
-The engine has been tested to work with Delphi 10.1 Berlin, but the DirectX-Headers contains some bugs, which has been fixed by us. Ensure to include the directory FixedDX11Header in your project, so the correct files are used. In newer Delphi versions some of the bugs might be fixed, rendering our patches obsolete.
+The engine has been tested to work with Delphi 10.1 Berlin, but the DirectX-Headers contains some bugs, which has been fixed by us. Ensure to include the directory FixedDX11Header in your project, so the correct files are used. Then copy the FMX-Source-Files requested by Delphi into that folder as well. In newer Delphi versions some of the bugs might be fixed, rendering our patches obsolete.
 
 ## License
 
