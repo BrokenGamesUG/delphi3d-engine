@@ -5,6 +5,9 @@ A 3D-graphic and game engine for Delphi and Windows. It was used to develop the 
 ## Engine
 Either copy all files in your project or the way we usually link to it: Add the Engine directory and all subdirectory to your search path in Delphi (must be configured for each target 32-bit and 64-bit). The engine is tested (in Rise of Legions) to work with 32-bit using the graphic components (client) and 64-bit working without any graphic (server).
 
+* With Delphi 10.1 (version it was developed in): The built-in DirectX-Headers contains some bugs, which has been fixed by us. Ensure to include the directory FixedDX11Header in your project, so the fixed WinapiD3D11.pas is used. Additionally you need to copy the FMX-Source-Files (from Embarcadero\Studio\18.0\source\fmx) into that folder as well to compile them with the patched api headers. Apply the diff FMX.Canvas.D2D.diff to the respective file.
+* With Delphi 10.4+ (feedback from community): Delete the WinapiD3D11.pas from the FixedDX11Header directory, remove the line FMX.Canvas.D3D.TCustomCanvasD2D.LoadFontFromFile(Path); from Engine.GfxApi. There won't be custom fonts, but it should compile and work then.
+
 ## Editors
 The editors in this repository should be working and give you hints about the engine usage and can be used to create and configure effects. (tested in Delphi 10.1 Berlin)
 
