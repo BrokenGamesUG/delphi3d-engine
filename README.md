@@ -1,18 +1,18 @@
 # Delphi3D-Engine
-A 3D-graphic and game engine for Delphi and Windows. It was used to develop the game [Rise of Legions](https://riseoflegions.com).
+A 3D-graphic and game engine for Delphi, DirectX 11 and Windows. It was used to develop the free-to-play multiplayer game [Rise of Legions](https://riseoflegions.com).
 
 # Usage
 ## Engine
 Either copy all files in your project or the way we usually link to it: Add the Engine directory and all subdirectory to your search path in Delphi (must be configured for each target 32-bit and 64-bit). The engine is tested (in Rise of Legions) to work with 32-bit using the graphic components (client) and 64-bit working without any graphic (server).
 
-* With Delphi 10.1 (version it was developed in): The built-in DirectX-Headers contains some bugs, which has been fixed by us. Ensure to include the directory FixedDX11Header in your project, so the fixed WinapiD3D11.pas is used. Additionally you need to copy the FMX-Source-Files (from Embarcadero\Studio\18.0\source\fmx) into that folder as well to compile them with the patched api headers. Apply the diff FMX.Canvas.D2D.diff to the respective file.
+* With Delphi 10.1 Berlin (version it was developed in): The built-in DirectX-Headers contains some bugs, which has been fixed by us. Ensure to include the directory FixedDX11Header in your project, so the fixed WinapiD3D11.pas is used. Additionally you need to copy the FMX-Source-Files (from Embarcadero\Studio\18.0\source\fmx) into that folder as well to compile them with the patched api headers. Apply the diff FMX.Canvas.D2D.diff to the respective file.
 * With Delphi 10.4+ (feedback from community): Delete the WinapiD3D11.pas from the FixedDX11Header directory, remove the line FMX.Canvas.D3D.TCustomCanvasD2D.LoadFontFromFile(Path); from Engine.GfxApi. There won't be custom fonts, but it should compile and work then.
 
 ## Editors
 The editors in this repository should be working and give you hints about the engine usage and can be used to create and configure effects. (tested in Delphi 10.1 Berlin)
 
 # Warning
-To be honest this engine has lots of neat functionality, but is not easy to use. This project was developed by my friend an my since our studies for many years. There is a lot of features, but no real documentation (except sometimes more sometimes less code comments) and surely a lot of bugs if anyone new to the engine will use it. I would advice to use this engine with care and have a look at the source code of Rise of Legions or the editors for some hints about the usage of some modules.
+To be honest this engine has lots of neat functionality, but is not easy to use. This project was developed by my friend an me since our studies over many years. There are a lot of features, but no real documentation (except sometimes more sometimes less code comments) and surely a lot of bugs, if anyone new to the engine will use it. I would advice to use this engine with care and have a look at the source code of Rise of Legions or the editors for some hints about the usage of the modules.
 
 # Features
 
@@ -45,7 +45,7 @@ To be honest this engine has lots of neat functionality, but is not easy to use.
   
 ## Workarounds
 
-The DirectX SDK throws a lot of warnings which are printed by Delphi in the editor output. This printing consumes a lot of performance, e.g. the editors seems to run slowly when this happens. To work around this you can use the dxcpl.exe for the DirectX SDK to mute the warning showing up.
+The DirectX SDK throws a lot of warnings which are printed by Delphi in the editor output while in debug. This printing consumes a lot of performance, e.g. the editors seems to run slowly when this happens. To work around this you can use the dxcpl.exe for the DirectX SDK to mute the warnings showing up.
 
 ## License
 
